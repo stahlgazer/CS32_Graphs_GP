@@ -43,7 +43,6 @@ def dft(row, col, matrix, visited):
         v = s.pop()
         row = v[0]
         col = v[1]
-
         if not visited[row][col]:
             visited[row][col] = True
             for neighbor in get_neighbors(col, row, matrix):
